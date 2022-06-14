@@ -348,23 +348,13 @@
   ],
   "advertisements": [
     {
-      "id": 2,
-      "userId": 6,
-      "dateTime": "2021-11-24 02:04:39",
-      "title": "You like it toooo much",
-      "description": "Only for this month",
-      "discount": 30,
-      "urlToImage": "https://www.lasamarillasdezipaquira.com/oc-content/uploads/1/352.jpg",
-      "promotion": true
-    },
-    {
       "id": 3,
       "userId": 6,
       "dateTime": "2021-10-19 21:16:56",
       "title": "Buy i for a while!!!",
       "description": "vcvcxvcx",
       "discount": 22,
-      "urlToImage": "https://www.lasamarillasdezipaquira.com/oc-content/uploads/1/352.jpg",
+      "urlToImage": "https://www.micachorro.net/wp-content/uploads/2019/06/anemia-en-perros.jpg",
       "promotion": true
     },
     {
@@ -373,7 +363,7 @@
       "title": "test1",
       "description": "asdasdasdas",
       "discount": 12,
-      "urlToImage": "https://www.lasamarillasdezipaquira.com/oc-content/uploads/1/352.jpg",
+      "urlToImage": "https://www.micachorro.net/wp-content/uploads/2019/06/anemia-en-perros.jpg",
       "promotion": true,
       "id": 4
     },
@@ -384,7 +374,7 @@
       "title": "Advertisement 1",
       "description": "asdasda",
       "discount": null,
-      "urlToImage": "https://blog.mailrelay.com/wp-content/uploads/2018/03/anuncios-publicitarios.png",
+      "urlToImage": "https://www.micachorro.net/wp-content/uploads/2019/06/anemia-en-perros.jpg",
       "promotion": true
     },
     {
@@ -393,7 +383,7 @@
       "title": "74647349",
       "description": "951083038",
       "discount": null,
-      "urlToImage": "https://blog.mailrelay.com/wp-content/uploads/2018/03/anuncios-publicitarios.png",
+      "urlToImage": "https://www.micachorro.net/wp-content/uploads/2019/06/anemia-en-perros.jpg",
       "promotion": true,
       "id": 6
     }
