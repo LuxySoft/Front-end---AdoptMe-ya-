@@ -6,6 +6,7 @@ import {PublishService} from '../../services/publish.service';
 import {PetsService} from '../../services/pets.service';
 import {Router} from '@angular/router';
 import {Pet} from '../../models/pet.model';
+import {Publication} from '../../models/publish.model';
 
 @Component({
   selector: 'app-notification',
@@ -15,7 +16,7 @@ import {Pet} from '../../models/pet.model';
 export class NotificationComponent implements OnInit {
  public requests: [] = [];
  public users: [] = [];
-  public publications: [] = [];
+  public publications: Array<Publication>;
   public pets: Array<Pet>;
   uerIdFrom: 0;
   useridAt: 0;
@@ -34,6 +35,7 @@ export class NotificationComponent implements OnInit {
   ngOnInit(): void {
    this.getRequests();
    this.getUsers();
+   this.getPubli();
 
    this.petService.ReadPets().subscribe((data) => {
      this.pets = data ;
@@ -42,9 +44,17 @@ export class NotificationComponent implements OnInit {
 
   }
   // tslint:disable-next-line:typedef
+  getPubli(): void{
+    this.publishService.getPublications().subscribe(
+      result => {
+        this.publications = result;
+      });
+  }
+  // tslint:disable-next-line:typedef
   getUsers() {
     this.userService.getUser().subscribe((result) => {
       this.users = result;
+      console.log(result);
     });
   }
   // tslint:disable-next-line:typedef
@@ -53,6 +63,7 @@ export class NotificationComponent implements OnInit {
      this.requests = result;
      this.uerIdFrom = result.uerIdFrom;
      this.useridAt = result.useridAt;
+     console.log(result);
    });
   }
 
